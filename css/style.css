@@ -1,3 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: aqua;
+    background-color: lightgray;
+}
+
+.container{
+    width: 800px;
+    height: 800px;
+    margin: 80px auto;
+    border:  2px solid rgb(0, 0, 0);
+}
+.container::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+.square{
+    float: left;
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    border: 1px solid rgb(0, 0, 0);
 }
