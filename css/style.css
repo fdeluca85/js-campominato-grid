@@ -11,7 +11,7 @@ body{
     width: 800px;
     height: 800px;
     margin: 80px auto;
-    border:  2px solid rgb(0, 0, 0);
+    /* border:  2px solid rgb(0, 0, 0); */
 }
 .container::after{
     content:'';
@@ -20,7 +20,23 @@ body{
 }
 .square{
     float: left;
-    width: calc(100% / 8);
-    height: calc(100% / 8);
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid black;
+    cursor: pointer; 
+}
+.easy{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+.hard{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    
+}
+.crazy{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+.blue{
+    background-color: cornflowerblue;
+    color: white;
 }

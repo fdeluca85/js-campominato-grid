@@ -7,3 +7,28 @@
 // Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.
 
 
+const container = document.querySelector(".container");
+
+let items= '';
+
+for(let i = 1; i <= 81; i++){
+    items +=`
+    <div class="square hard">${i}</div>`    
+}
+for(let i = 1; i <= 100; i++){
+    items +=`
+    <div class="square easy">${i}</div>`    
+}
+for(let i = 1; i <= 49; i++){
+    items +=`
+    <div class="square crazy">${i}</div>`    
+}
+console.log(items);
+container.innerHTML = items
+
+
+let divSquare = document.querySelector('.square')
+divSquare.addEventListener("click", function(){
+    this.classList.add('blue'); 
+});
+console.log(divSquare);
