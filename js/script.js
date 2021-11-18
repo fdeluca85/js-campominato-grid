@@ -42,11 +42,11 @@ function easy(){
         return node;
     }
     
-    for(let i = 0; i < 100; i++){
+    for(let i = 1; i <= 100; i++){
     
         const clicked = levEasy();
         container.appendChild(clicked);
-    
+        clicked.innerHTML = i;
         clicked.addEventListener('click', function() {
             console.log(this);
             this.classList.add('blue');
@@ -63,11 +63,11 @@ function hard (){
         return node;
     }
     
-    for(let i = 0; i < 81; i++){
+    for(let i = 1; i <= 81; i++){
     
         const clicked = levHard();
         container.appendChild(clicked);
-    
+        clicked.innerHTML = i;
         clicked.addEventListener('click', function() {
             console.log(this);
             this.classList.add('blue');
@@ -83,9 +83,10 @@ function crazy (){
         return node;
     }
     
-    for(let i = 0; i < 49; i++){
+    for(let i = 1; i <= 49; i++){
     
         const clicked = levCrazy();
+        clicked.innerHTML = i;
         container.appendChild(clicked);
     
         clicked.addEventListener('click', function() {
